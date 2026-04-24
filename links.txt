@@ -1,0 +1,5 @@
+1-) Python 3.10.0 = https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe
+2-) Visual Studio Code = https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe
+3-) Visual C++ = https://aka.ms/vs/17/release/vc_redist.x64.exe
+4-) Dataset = https://www.kaggle.com/datasets/arshnoor7389/garbage-classification-dataset?resource=download
+5-) Torch for CUDA = pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
