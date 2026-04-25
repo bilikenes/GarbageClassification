@@ -7,17 +7,17 @@ def train_yolo():
         data=r"C:\Users\PC\Desktop\garbage_dataset\yolo_dataset\data.yaml",
         epochs=100,
         imgsz=640,
-        device=0,
+        device='cpu',
         batch=16,
         workers=4,
-        patience=20,
-        hsv_h=0.015,
-        hsv_s=0.7,
-        hsv_v=0.4,
-        degrees=10.0,
-        translate=0.1,
-        scale=0.5,
-        fliplr=0.5
+        patience=20,  # eğer 20 tur boyunca başarı sabit kalırsa durdurmaya yarar
+        hsv_h=0.015,  # resmin renk ayarlarıyla %1.5 oranında oynar
+        hsv_s=0.7,  # resmin canlılık ayarlarıyla %70 oranında oynar
+        hsv_v=0.4,  # resmin parlaklığıyla %40 oranında oynar
+        degrees=10.0,  # resmi rastgele -10 ile +10 derece arasında yamultur
+        translate=0.1,  # resmi merkezden dört yöne kaydırır
+        scale=0.5,  # resmi %50 oranında büyültüp küçültür
+        fliplr=0.5  # resme aynalama efekti uygular
     )
 
 
