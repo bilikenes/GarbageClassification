@@ -2,14 +2,14 @@ from ultralytics import YOLO
 
 
 def train_yolo():
-    model = YOLO('yolov8m.pt')
+    model = YOLO('yolo26n.pt')
     model.train(
-        data=r"C:\Users\PC\Desktop\garbage_dataset\yolo_dataset\data.yaml",
-        epochs=100,
-        imgsz=640,
-        device='cpu',
-        batch=16,
-        workers=4,
+        data=r"C:\Users\PC\Desktop\garbage_dataset\yolo_dataset\data.yaml",  # kullandığımız veri setinin bilgisayarımızdaki konumu
+        epochs=100,  # modelin veri setini kaç kere tarayacağı
+        imgsz=640,  # modelin tüm resimleri ayarlayacağı ortak boyut
+        device='cpu',  # eğitim aşamasında kullanılacak donanım (ekran kartı için 0 yazılmalı)
+        batch=16,  # veri setini kaçarlı gruplar halinde ayrılacağı
+        workers=4,  # modele resimleri gönderecek işlemci işçileri
         patience=20,  # eğer 20 tur boyunca başarı sabit kalırsa durdurmaya yarar
         hsv_h=0.015,  # resmin renk ayarlarıyla %1.5 oranında oynar
         hsv_s=0.7,  # resmin canlılık ayarlarıyla %70 oranında oynar
