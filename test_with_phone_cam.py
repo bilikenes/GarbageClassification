@@ -1,10 +1,10 @@
 import cv2
 from ultralytics import YOLO
 
-model_path = r"runs\detect\train-4\weights\best.pt"
+model_path = r"runs\detect\garbage_classifier_v3\weights\best.pt"
 model = YOLO(model_path)
 
-camera_url = "http://192.168.1.5:8080/video"
+camera_url = "http://192.168.1.114:8080/video"
 cap = cv2.VideoCapture(camera_url)
 
 while cap.isOpened():
